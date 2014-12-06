@@ -1,6 +1,8 @@
 {
     "name": "latrell/geohash",
-    "description": "",
+    "description": "This package geohash for Laravel4 support.",
+    "keywords": ["L4", "Laravel 4", "Laravel", "Geohash"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Latrell Chan",
