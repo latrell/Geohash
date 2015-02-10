@@ -20,7 +20,7 @@ class GeohashServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-		$this->package('latrell/geohash');
+		//
 	}
 
 	/**
