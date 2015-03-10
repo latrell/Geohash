@@ -1,7 +1,7 @@
 {
     "name": "latrell/geohash",
     "description": "This package geohash for Laravel4 support.",
-    "keywords": ["L4", "Laravel 4", "Laravel", "Geohash"],
+    "keywords": ["L5", "Laravel 5", "Laravel", "Geohash"],
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*|~5.0"
+        "illuminate/support": "5.*"
     },
     "autoload": {
         "psr-0": {
