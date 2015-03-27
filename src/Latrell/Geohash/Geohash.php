@@ -168,21 +168,19 @@ class Geohash
 	*/
 	private function binEncode($number, $min, $max, $bitcount)
 	{
-		if ($bitcount == 0) {
-			return "";
-		}
-
-		#echo "$bitcount: $min $max<br>";
-
-
-		// this is our mid point - we will produce a bit to say
-		// whether $number is above or below this mid point
-		$mid = ($min + $max) / 2;
-		if ($number > $mid) {
-			return "1" . $this->binEncode($number, $mid, $max, $bitcount - 1);
-		} else {
-			return "0" . $this->binEncode($number, $min, $mid, $bitcount - 1);
-		}
+		$result = '';
+        while ($bitcount > 0) {
+            $mid = ($min + $max) / 2;
+            if ($number > $mid) {
+                $result .= '1';
+                $min = $mid;
+            } else {
+                $result .= '0';
+                $max = $mid;
+            }
+            $bitcount --;
+        }
+        return $result;
 	}
 
 	/**
